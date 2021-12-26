@@ -48,7 +48,7 @@ census_df = load_data()
 st.subheader("Census Data set")
 if st.sidebar.checkbox("Show raw data"):
   st.subheader("Full Data Set")
-  st.table(census_df)  
+  st.dataframe(census_df)  
   st.write(f'The number of rows are {census_df.shape[0]}')
   st.write(f'The number of columns are {census_df.shape[1]}')
 	
